@@ -1,0 +1,17 @@
+body {
+    background-color: darkgoldenrod;
+   
+  }
+
+  .title{
+    font-size: 40px;
+    color:dimgray
+  }
+
+  .logo{
+    width: 300px;
+  }
+
+  #principal{
+    font-size: 70px;
+  }
