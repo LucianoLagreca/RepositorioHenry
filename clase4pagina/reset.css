@@ -1,0 +1,101 @@
+/* Reset CSS v2.0 */
+
+/* Elimina el margen y el padding predeterminados de todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño del elemento */
+  margin: 0;
+  padding: 0;
+}
+
+/* Se asegura de que el tamaño de las fuentes sea coherente en todos los navegadores */
+html {
+  font-size: 100%; /* Define el tamaño base de la fuente al 100% del tamaño del navegador */
+  line-height: 1.15; /* Ajusta la altura de línea para mejorar la legibilidad */
+  -webkit-text-size-adjust: 100%; /* Evita que los dispositivos iOS ajusten automáticamente el tamaño del texto */
+}
+
+/* Elimina el margen predeterminado del body */
+body {
+  margin: 0;
+  font-family: sans-serif; /* Usa una fuente sans-serif por defecto */
+}
+
+/* Remueve el subrayado de los enlaces y establece el color por defecto */
+a {
+  text-decoration: none; /* Quita la decoración (subrayado) de los enlaces */
+  color: inherit; /* Hereda el color del enlace de su elemento padre */
+}
+
+/* Se asegura de que las listas no tengan padding o margen y que los elementos de lista no tengan estilo */
+ul,
+ol {
+  list-style: none; /* Elimina los estilos predeterminados de las listas */
+  padding: 0;
+  margin: 0;
+}
+
+/* Normaliza el estilo del elemento strong para que sea consistente en todos los navegadores */
+strong {
+  font-weight: bold; /* Asegura que los elementos strong sean siempre negritas */
+}
+
+/* Elimina el borde predeterminado de las imágenes */
+img {
+  border-style: none; /* Quita el borde alrededor de las imágenes */
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho de su contenedor */
+  height: auto; /* Mantiene la relación de aspecto de las imágenes */
+}
+
+/* Normaliza el estilo del elemento table */
+table {
+  border-collapse: collapse; /* Fusiona los bordes adyacentes de las celdas */
+  border-spacing: 0; /* Elimina el espacio entre las celdas de la tabla */
+}
+
+/* Elimina el borde predeterminado de los elementos de formularios */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Hereda el estilo de fuente de su elemento padre */
+  margin: 0; /* Elimina el margen predeterminado */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+/* Asegura que los botones y otros elementos interactivos no tengan sombras y muestren el cursor adecuado */
+button,
+[role="button"] {
+  cursor: pointer; /* Muestra el cursor de mano al pasar sobre los botones */
+}
+
+/* Quita las sombras de los campos de entrada en navegadores que aplican este estilo por defecto */
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Elimina las animaciones y transiciones en elementos que no las requieren por accesibilidad */
+* {
+  transition: none !important; /* Quita las transiciones */
+  animation: none !important; /* Quita las animaciones */
+}
+
+/* Asegura que los elementos de video y audio se ajusten a su contenedor */
+video,
+audio {
+  display: block; /* Asegura que los elementos de medios se comporten como bloques */
+  max-width: 100%; /* Ajusta los medios al ancho de su contenedor */
+}
+
+/* Establece el tamaño del iframe y otros elementos embebidos al 100% del contenedor */
+iframe,
+embed,
+object {
+  max-width: 100%; /* Ajusta los elementos embebidos al ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de aspecto */
+}
